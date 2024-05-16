@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+}
+/* NAVBAR */
+
+#backgroundImagem {
+  height: 40em;
+  background-image: url("/img/25.06.gif");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.NavBar-total {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centralizar verticalmente */
+}
+
+.Navbar {
+  display: flex;
+  align-items: center; /* Alinhar verticalmente */
+}
+
+.logo-navbar {
+  width: 200px;
+  margin-right: auto; /* Empurrar para o canto esquerdo */
+}
+
+.itens-navbar {
+  display: inline-block;
+}
+
+.itens-navbar li {
+  display: inline;
+  margin: 0 15px;
+}
+
+
+.link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin-left: 50px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.link::before,
+.link::after{
+content: '';
+position: absolute;
+left: 0;
+width: 100%;
+height: 2px;
+background-color: #e65454;
+transform: scaleX(0);
+transition: transform .25s;
+}
+.link::before{
+  top: -3px;
+  transform-origin: left;
+}
+.link::after{
+  bottom: -3px;
+  transform-origin: right;
+}
+.link:hover::before,
+.link:hover::after{
+  transform: scaleX(1);
+}
+
+/* opções de programa */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 200px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+  top: 100%; /* Coloca o dropdown abaixo do link */
+  left: 0; /* Alinha o dropdown com o link */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f12a;
+}
+/* Main Page */
+
+.Lives {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.fundo-escuro-lives {
+  position: absolute;
+  top: 50%; /* Posiciona no meio da div "Lives" */
+  left: 0;
+  width: 100%;
+  height: 50rem; /* Metade da altura da div "Lives" */
+  background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo com transparência */
+  z-index: -1; /* Coloca a div atrás da "Live-Agora" */
+}
+.Live-Agora {
+  -webkit-box-shadow: 2px 76px 46px -56px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 76px 46px -56px rgba(0,0,0,0.75);
+box-shadow: 2px 76px 46px -56px rgba(0,0,0,0.75);
+}
+
+.Lives-Antigas {
+  display: flex;
+  justify-content: space-around;
+  margin-top:20rem;
+}
+
+.live {
+  width: 20px;
+}
