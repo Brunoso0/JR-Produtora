@@ -7,7 +7,7 @@ body {
 /* NAVBAR */
 
 #backgroundImagem {
-  height: 40em;
+  height: 45em;
   background-image: url("/img/25.06.gif");
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -37,7 +37,6 @@ body {
   margin: 0 15px;
 }
 
-
 .link {
   position: relative;
   display: inline-block;
@@ -48,26 +47,26 @@ body {
   font-size: 18px;
 }
 .link::before,
-.link::after{
-content: '';
-position: absolute;
-left: 0;
-width: 100%;
-height: 2px;
-background-color: #e65454;
-transform: scaleX(0);
-transition: transform .25s;
+.link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ff0000;
+  transform: scaleX(0);
+  transition: transform .25s;
 }
-.link::before{
+.link::before {
   top: -3px;
   transform-origin: left;
 }
-.link::after{
+.link::after {
   bottom: -3px;
   transform-origin: right;
 }
 .link:hover::before,
-.link:hover::after{
+.link:hover::after {
   transform: scaleX(1);
 }
 
@@ -102,36 +101,269 @@ transition: transform .25s;
   background-color: #f1f1f12a;
 }
 /* Main Page */
+.agenda {
+  text-align: center;
+  margin: 10rem;
+}
+
+.agenda h1 {
+  color: #ff3535;
+  margin-bottom: 5rem;
+  font-weight: bold;
+  font-size: 55px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.evento {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  width: 30%;
+  box-sizing: border-box;
+  text-align: left;
+  position: relative;
+}
+
+.numero {
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.numero h1 {
+  font-size: 120px;
+  margin: 0;
+  color: #ff3535;
+  position: relative;
+  z-index: 1;
+}
+
+.numero::before {
+  content: "";
+  position: absolute;
+  top: 17%;
+  left: 53%;
+  width: 80px;
+  height: 100px;
+  transform: skew(-15deg);
+  background:#1e1f24;
+  z-index: 0;
+}
+
+.detalhes {
+  flex: 1;
+  padding-left: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.detalhes h2 {
+  color: #ff3535;
+  font-weight: bold;
+}
+
+.detalhes p {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.detalhes h2,
+.detalhes p {
+  margin: 0;
+}
 
 .Lives {
   position: relative;
   display: flex;
   align-items: center;
   flex-direction: column;
+  background-image: url("/img/kids.jpg");
+  background-size: cover;
+  background-position:0 40%;
+  color: rgb(62, 62, 62);
 }
 
+#AOVIVO {
+  width: 50rem;
+  height: 3rem;
+  text-align: center;
+}
 
 .fundo-escuro-lives {
   position: absolute;
   top: 50%; /* Posiciona no meio da div "Lives" */
   left: 0;
   width: 100%;
-  height: 50rem; /* Metade da altura da div "Lives" */
-  background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo com transparência */
+  height: 90rem; /* Metade da altura da div "Lives" */
+  background: rgb(23,29,43);
+background: linear-gradient(90deg, rgba(23,29,43,1) 0%, rgba(37,44,61,1) 40%, rgba(37,44,61,1) 60%, rgba(23,29,43,1) 100%);
   z-index: -1; /* Coloca a div atrás da "Live-Agora" */
 }
+
+.fundo-escuro-lives h1 {
+  text-align: center;
+  margin-top: 20rem;
+  color: white;
+}
+
 .Live-Agora {
   -webkit-box-shadow: 2px 76px 46px -56px rgba(0,0,0,0.75);
--moz-box-shadow: 2px 76px 46px -56px rgba(0,0,0,0.75);
-box-shadow: 2px 76px 46px -56px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 76px 46px -56px rgba(0,0,0,0.75);
+  box-shadow: 2px 76px 46px -56px rgba(0,0,0,0.75);
+}
+
+.Live-Agora iframe {
+  width: 50rem;
+  height: 30rem;
 }
 
 .Lives-Antigas {
   display: flex;
   justify-content: space-around;
-  margin-top:20rem;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.live {
-  width: 20px;
+.live iframe{
+  width: 400px;
+  height: 250px;
+}
+
+.canal {
+  position: relative;
+  text-align: center;
+  margin-top: 28rem;
+  color: white;
+}
+
+.canal h2 {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.Btn {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  /* overflow: hidden; */
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.svgContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(0px);
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.BG {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #ff0000;
+  z-index: -1;
+  border-radius: 10px;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.Btn:hover .BG {
+  transform: rotate(35deg);
+  transform-origin: bottom;
+}
+
+.Btn:hover .svgContainer {
+  border: 1px solid rgba(255, 110, 110, 0.466);
+  background-color: rgba(219, 219, 219, 0.466);
+  backdrop-filter: blur(4px);
+}
+
+/* VAN E EQUIPAMENTOS */
+
+.van-e-equipamentos {
+  display: flex;
+  align-items: center;
+  margin: 2rem 10rem; /* Ajuste as margens conforme necessário */
+  max-width: 70%;
+  height: auto;
+  margin: 10rem auto;
+}
+
+.van-textos h1 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.van-e-equipamentos img {
+  max-width: 100%;
+  margin-top: 10rem;
+  margin-right: 9rem; /* Espaçamento entre a imagem e o texto */
+}
+
+.van-textos {
+  max-width: 39%;
+  text-align: center; /* Centraliza o botão */
+}
+
+.van-textos h1 {
+  color: #ff3535;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.van-textos p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #fff;
+  text-align: left;
+  margin-bottom: 2rem; /* Espaçamento entre o texto e o botão */
+}
+
+.van-button button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #ffffff80;
+  text-shadow: none;
+  background: transparent;
+  cursor: pointer;
+  box-shadow: transparent;
+  border: 1px solid #ffffff80;
+  transition: 0.5s ease;
+  user-select: none;
+}
+
+#btn:hover {
+  color: #ffffff;
+  background: #ff1e00;
+  border: 1px solid #fc6e6e;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+  box-shadow: 0 0 5px #db3333, 0 0 20px #db3333, 0 0 50px #db3333,
+    0 0 100px #db3333;
 }
