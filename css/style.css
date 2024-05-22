@@ -8,7 +8,7 @@ body {
 
 #backgroundImagem {
   height: 45em;
-  background-image: url("./img/25.06.gif");
+  background-image: url("../img/25.06.jpeg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
