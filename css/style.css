@@ -1,14 +1,14 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: white;
+  background-color: #fff;
   font-family: "Montserrat", sans-serif;
 }
 /* NAVBAR */
 
 #backgroundImagem {
   height: 45em;
-  background-image: url("/img/25.06.gif");
+  background-image: url("../img/25.06.gif");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -182,7 +182,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-image: url("/img/kids.jpg");
+  background-image: url("../img/kids.jpg");
   background-size: cover;
   background-position:0 40%;
   color: rgb(62, 62, 62);
@@ -194,16 +194,43 @@ body {
   text-align: center;
 }
 
+.fundo-produtora-right img {
+  position: relative;
+  
+}
+
 .fundo-escuro-lives {
   position: absolute;
   top: 50%; /* Posiciona no meio da div "Lives" */
   left: 0;
   width: 100%;
-  height: 90rem; /* Metade da altura da div "Lives" */
+  height: 80rem; /* Metade da altura da div "Lives" */
   background: rgb(23,29,43);
 background: linear-gradient(90deg, rgba(23,29,43,1) 0%, rgba(37,44,61,1) 40%, rgba(37,44,61,1) 60%, rgba(23,29,43,1) 100%);
   z-index: -1; /* Coloca a div atrás da "Live-Agora" */
+  overflow: hidden;
 }
+
+.imagem-de-fundo {
+  position: absolute;
+  top: 25%;
+  left: 85%;
+  width: 15%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.5; /* Ajuste a opacidade conforme necessário */
+}
+
+.imagem-de-fundo2 {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 20%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.7; /* Ajuste a opacidade conforme necessário */
+}
+
 
 .fundo-escuro-lives h1 {
   text-align: center;
@@ -305,10 +332,9 @@ background: linear-gradient(90deg, rgba(23,29,43,1) 0%, rgba(37,44,61,1) 40%, rg
 .van-e-equipamentos {
   display: flex;
   align-items: center;
-  margin: 2rem 10rem; /* Ajuste as margens conforme necessário */
   max-width: 70%;
   height: auto;
-  margin: 10rem auto;
+  margin: 0 auto;
 }
 
 .van-textos h1 {
@@ -366,4 +392,255 @@ background: linear-gradient(90deg, rgba(23,29,43,1) 0%, rgba(37,44,61,1) 40%, rg
   text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
   box-shadow: 0 0 5px #db3333, 0 0 20px #db3333, 0 0 50px #db3333,
     0 0 100px #db3333;
+}
+
+/* GALERIA DE FOTOS */
+
+
+.title {
+  text-align: center;
+  margin-top: 10rem;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.gallery-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* Defina a largura máxima desejada */
+  height: 30rem;
+  overflow: hidden;
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-item {
+  position: absolute;
+  width: 50%;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.gallery-item img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.gallery-item.left {
+  transform: translateX(-60%) scale(0.6);
+  opacity: 0.5;
+  filter: blur(5px);
+}
+
+.gallery-item.center {
+  transform: translateX(0) scale(1);
+  opacity: 1;
+  filter: blur(0);
+  z-index: 1;
+}
+
+.gallery-item.right {
+  transform: translateX(46%) scale(0.6);
+  opacity: 0.5;
+  filter: blur(5px);
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateX(200%);
+}
+
+/* BOTAO GALERY */
+
+
+/* Celular */
+
+.btn-galery {
+  display: block;
+    margin: 20px auto;
+    margin-bottom: 10rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #af2c2c;
+  transition: all 1000ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid #af2c2c;
+}
+
+.btn-galery:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  outline: 2px solid #cf4444;
+  box-shadow: 4px 5px 17px -4px #912626;
+}
+
+.btn-galery::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #c73d3d;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.btn-galery:hover::before {
+  width: 250%;
+}
+
+/* CELULAR */
+
+#background-celular {
+  background-color: #1e1f24;
+}
+
+.celular-redes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 50%;
+  align-items: center;
+  margin: 0 auto;
+  color: #FFF;
+  padding-top: 10rem;
+}
+
+.celular img {
+  width: 80%;
+  filter: drop-shadow(34px 46px 34px #e085854c) drop-shadow(-53px -40px 34px #d0d25625);
+
+}
+
+.btn-celular {
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.btn-celular .button-celular {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 180px;
+  height: 30px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-celular .button-celular a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  padding: 10px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  overflow: hidden;
+  color: #fff;
+  font-weight: 400px;
+  z-index: 1;
+  transition: 0.5s;
+  backdrop-filter: blur(15px);
+}
+
+.btn-celular .button-celular:hover a {
+  letter-spacing: 3px;
+}
+
+.btn-celular .button-celular a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+  transform: skewX(45deg) translate(0);
+  transition: 0.5s;
+  filter: blur(0px);
+}
+
+.btn-celular .button-celular:hover a::before {
+  transform: skewX(45deg) translate(200px);
+}
+
+.btn-celular .button-celular::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+  bottom: -29px;
+  width: 30px;
+  height: 10px;
+  background: #f00;
+  border-radius: 10px;
+  transition: 0.5s;
+  transition-delay: 0.5;
+}
+
+.btn-celular .button-celular:hover::before /*lightup button*/ {
+  bottom: 0;
+  height: 50%;
+  width: 80%;
+  border-radius: 30px;
+}
+
+.btn-celular .button-celular::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+  top: -5px;
+  width: 30px;
+  height: 10px;
+  background: #f00;
+  border-radius: 10px;
+  transition: 0.5s;
+  transition-delay: 0.5;
+}
+
+.btn-celular .button-celular:hover::after /*lightup button*/ {
+  top: 0;
+  height: 50%;
+  width: 80%;
+  border-radius: 30px;
+}
+
+.btn-celular .button-celular:nth-child(1)::before,
+.btn-celular .button-celular:nth-child(1)::after {
+  background: #ff1f71;
+  box-shadow: 0 0 5px #ff1f71, 0 0 15px #ff1f71, 0 0 30px #ff1f71,
+		0 0 60px #ff1f71;
 }
