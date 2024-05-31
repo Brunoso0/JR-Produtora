@@ -23,3 +23,5 @@ function showNextItem() {
 
 setInterval(showNextItem, 3000);
 updateCarousel();
+
+

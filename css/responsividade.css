@@ -1,0 +1,570 @@
+/* Para dispositivos pequenos (celulares em modo retrato) */
+@media (max-width: 645px) {
+    #backgroundImagem {
+      height: 30rem; /* Ajuste a altura para telas menores */
+    }
+  
+    .img-centro {
+      max-width: 70%; /* Ajuste o tamanho da imagem */
+    }
+  
+    .NavBar-total {
+      flex-direction: column; /* Empilhe os itens verticalmente */
+      align-items: center; /* Centralize os itens horizontalmente */
+    }
+  
+    .logo-navbar {
+      margin-bottom: 10px; /* Adicione margem abaixo da logo */
+    }
+  
+    .scale-up-center {
+      top: 23%;
+      left: 38%;
+      width: 80px;
+      height: 50px;
+    }
+  
+    .link {
+      margin-left: 0; /* Remova a margem esquerda */
+      font-size: 12px; /* Diminua o tamanho da fonte */
+    }
+  
+    .agenda {
+      margin: 5rem 1rem;
+      display: block;
+    }
+  
+    .agenda h1 {
+      font-size: 20px;
+      grid-column: 1;
+    }
+  
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .evento {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .numero {
+      font-size: 60px;
+    }
+  
+    .numero::before {
+      top: 12%;
+      left: 45%;
+      width: 30px;
+      height: 60px;
+    }
+  
+    .textos {
+      margin-left: 4vh;
+    }
+  
+    .detalhes {
+      padding-left: 20px; /* Reduza o padding */
+    }
+  
+    .Lives {
+      background-position: center; /* Ajuste a posição do background */
+    }
+  
+    .Live-Agora iframe {
+      width: 100%; /* Ajuste a largura do iframe */
+      height: 12rem;
+    }
+  
+    .Lives-Antigas {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  
+    .live {
+      width: 45%; /* Ajuste a largura do container das lives passadas */
+      margin: 10px;
+    }
+  
+    .live iframe {
+      width: 100%;
+      height: 110px; /* Reduza a altura do iframe */
+    }
+  
+    .fundo-escuro-lives h1 {
+      margin-top: 13rem;
+    }
+  
+    .fundo-escuro-lives {
+      height: 102rem;
+    }
+  
+    .canal h2 {
+      padding-top: 4rem;
+    }
+  
+    .van-e-equipamentos {
+      display: flex;
+      flex-direction: column; /* Imagem acima do texto */
+      align-items: center;
+      max-width: 100%;
+      margin-top: 12rem;
+    }
+  
+    .van-e-equipamentos img {
+      margin-right: 0;
+      margin-top: 1rem;
+      width: 60%;
+    }
+  
+    .van-textos {
+      max-width: 85%;
+    }
+  
+    .celular-redes {
+      grid-template-columns: 1fr; /* Use uma única coluna */
+      width: 90%;
+      padding-top: 5rem;
+      text-align: center; /* Centralize o texto */
+    }
+  
+    .celular img {
+      width: 40%; /* Diminua o tamanho do celular */
+      margin: 0 auto; /* Centralize a imagem do celular */
+    }
+  
+    .celular-textos {
+      font-size: 15px;
+      width: 80%;
+      float: none; /* Remova o float */
+      text-align: left; /* Centralize o texto */
+      margin: 20px auto; /* Centralize horizontalmente e adicione margem superior e inferior */
+    }
+  
+    .celular-textos h1 {
+      text-align: center;
+    }
+  
+    .btn-celular {
+      flex-direction: column; /* Empilhe os botões verticalmente */
+      align-items: center; /* Centralize os botões */
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    #meio {
+      border-left: 1px solid red;
+      border-right: none;
+    }
+  
+    .footer {
+      flex-direction: row; /* Colunas em linha horizontal */
+      flex-wrap: wrap; /* Permite quebra de linha se necessário */
+      justify-content: space-around; /* Espaço entre os itens */
+      width: 90%;
+    }
+  
+    .footer-column {
+      margin: 10px;
+      flex: 1 1 40%; /* Flex grow, flex shrink, flex basis */
+    }
+  
+    .map iframe {
+      width: 100%;
+      height: 200px; /* Ajuste a altura do iframe do mapa */
+    }
+  }
+  
+  /* Para tablets (em modo retrato e paisagem) */
+  @media (min-width: 646px) and (max-width: 1024px) {
+    #backgroundImagem {
+      height: 35rem; /* Ajuste a altura para telas médias */
+    }
+  
+    .img-centro {
+      max-width: 60%; /* Ajuste o tamanho da imagem */
+    }
+  
+    .scale-up-center {
+      top: 23%;
+      left: 38%;
+      width: 120px;
+      height: 100px;
+    }
+  
+    .NavBar-total {
+      flex-direction: column; /* Empilhe os itens verticalmente */
+      align-items: center; /* Centralize os itens horizontalmente */
+    }
+  
+    .logo-navbar {
+      width: 180px; /* Ajuste o tamanho da logo */
+      margin-bottom: 20px; /* Adicione margem abaixo da logo */
+    }
+  
+    .link {
+      font-size: 16px; /* Ajuste o tamanho da fonte dos links */
+      margin-left: 0; /* Remova a margem esquerda */
+      margin-bottom: 10px; /* Adicione margem inferior aos links */
+    }
+  
+    .agenda {
+      margin: 2rem 0;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      width: 100%;
+    }
+  
+    .agenda h1 {
+      font-size: 45px;
+      grid-column: 1;
+    }
+  
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .evento {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .numero {
+      font-size: 60px;
+    }
+  
+    .numero::before {
+      top: 13%;
+      left: 40%;
+      width: 40px;
+      height: 60px;
+    }
+  
+    .textos {
+      margin-left: 4vh;
+    }
+  
+    .detalhes {
+      padding-left: 30px; /* Ajuste o padding */
+    }
+  
+    .Lives {
+      background-position: center; /* Ajuste a posição do background */
+    }
+  
+    .fundo-escuro-lives {
+      margin-top: -5rem;
+      height: 96rem;
+    }
+  
+    .Live-Agora iframe {
+      width: 400px; /* Ajuste a largura do iframe */
+      height: 215px;
+    }
+  
+    .Lives-Antigas {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .live {
+      width: 45%; /* Ajuste a largura do container das lives passadas */
+      margin: 10px;
+    }
+  
+    .live iframe {
+      width: 100%;
+      height: 170px; /* Ajuste a altura do iframe */
+    }
+  
+    .canal {
+      margin-top: 36rem;
+    }
+  
+    .van-e-equipamentos {
+      display: flex;
+      flex-direction: column; /* Imagem acima do texto */
+      align-items: center;
+      max-width: 90%;
+      margin-top: 4rem;
+    }
+  
+    .van-e-equipamentos img {
+      margin-right: 0;
+      margin-top: 1rem;
+      max-width: 50%;
+    }
+  
+    .van-textos {
+      max-width: 100%;
+    }
+  
+    .celular-redes {
+      grid-template-columns: 1fr; /* Use uma única coluna */
+      width: 80%;
+      padding-top: 7rem;
+      text-align: center; /* Centralize o texto */
+    }
+  
+    .celular img {
+      width: 30%; /* Diminua o tamanho do celular */
+      margin: 0 auto; /* Centralize a imagem do celular */
+    }
+  
+    .btn-celular {
+        flex-direction: column; /* Empilhe os botões verticalmente */
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center; /* Centralize os botões */
+      }
+    
+      #meio {
+        border-right: none; /* Remova a borda direita */
+      }
+  
+    .footer {
+      flex-direction: row; /* Colunas em linha horizontal */
+      flex-wrap: wrap; /* Permite quebra de linha se necessário */
+      justify-content: space-around; /* Espaço entre os itens */
+      width: 90%;
+    }
+  
+    .footer-column {
+      margin: 10px;
+      flex: 1 1 40%; /* Flex grow, flex shrink, flex basis */
+    }
+  
+    .map iframe {
+      width: 100%;
+      height: 200px; /* Ajuste a altura do iframe do mapa */
+    }
+  }
+  
+  /* Para desktops de 1025px até 1100px */
+  @media (min-width: 1025px) and (max-width: 1600px) {
+    #backgroundImagem {
+      height: 40rem; /* Ajuste a altura para esta faixa */
+    }
+  
+    .img-centro {
+        max-width: 55%; /* Ajuste o tamanho da imagem */
+    }
+  
+    .scale-up-center {
+      left: 20%;
+      top: 23%;
+      left: 38%;
+      width: 100px;
+      height: 80px;
+    }
+  
+    .NavBar-total {
+      flex-direction: column; /* Empilhe os itens verticalmente */
+      align-items: center; /* Centralize os itens horizontalmente */
+    }
+  
+    .logo-navbar {
+      width: 160px; /* Ajuste o tamanho da logo */
+      margin-bottom: 20px; /* Adicione margem abaixo da logo */
+    }
+  
+    .link {
+      font-size: 14px; /* Reduza o tamanho da fonte dos links */
+      margin-left: 0; /* Remova a margem esquerda */
+      margin-bottom: 10px; /* Adicione margem inferior aos links */
+    }
+  
+    .agenda {
+      margin: 3rem 2rem;
+      display: grid;
+      grid-template-columns: repeat(3, 0.8fr);
+      grid-template-rows: auto;
+    }
+  
+    .agenda h1 {
+      font-size: 24px;
+      width: 200px;
+    }
+
+    
+  
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .evento {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    .numero {
+      font-size: 70px;
+    }
+  
+    .numero::before {
+      top: 10%;
+      left: 37%;
+      width: 50px;
+      height: 80px;
+    }
+  
+    .textos {
+      margin-left: 5vh;
+    }
+
+    .evento {
+      margin-right: auto;
+    }
+  
+    .detalhes {
+      padding-left: 30px; /* Ajuste o padding */
+    }
+  
+    .Lives {
+      background-position: center; /* Ajuste a posição do background */
+    }
+  
+    .fundo-escuro-lives {
+      margin-top: -3rem;
+      height: 97rem;
+    }
+  
+    .Live-Agora iframe {
+      width: 400px; /* Ajuste a largura do iframe */
+      height: 230px;
+    }
+  
+    .Lives-Antigas {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .live {
+      max-width: 45%; /* Ajuste a largura do container das lives passadas */
+      margin: 10px;
+    }
+  
+    .live iframe {
+      width: 100%;
+      height: 190px; /* Ajuste a altura do iframe */
+    }
+  
+    .canal {
+      margin-top: 30rem;
+    }
+
+    .canal h2 {
+      padding-top: 8rem;
+    }
+  
+    .van-e-equipamentos {
+      display: flex;
+      flex-direction: column; /* Imagem acima do texto */
+      align-items: center;
+      max-width: 90%;
+      margin-top: 4rem;
+    }
+  
+    .van-e-equipamentos img {
+      margin-right: 0;
+      margin-top: 1rem;
+      max-width: 50%;
+    }
+  
+    .van-textos {
+      max-width: 100%;
+    }
+  
+    .celular-redes {
+      grid-template-columns: 1fr; /* Use uma única coluna */
+      width: 80%;
+      padding-top: 7rem;
+      text-align: center; /* Centralize o texto */
+    }
+  
+    .celular img {
+      width: 30%; /* Diminua o tamanho do celular */
+      margin: 0 auto; /* Centralize a imagem do celular */
+    }
+  
+    .btn-celular {
+      flex-direction: column; /* Empilhe os botões verticalmente */
+      margin-left: auto;
+      margin-right: auto;
+      align-items: center; /* Centralize os botões */
+    }
+  
+    .footer {
+      flex-direction: row; /* Colunas em linha horizontal */
+      flex-wrap: wrap; /* Permite quebra de linha se necessário */
+      justify-content: space-around; /* Espaço entre os itens */
+      width: 90%;
+    }
+  
+    #meio {
+      border-right: none; /* Remova a borda direita */
+    }
+
+    .footer-column {
+      margin: 10px;
+      flex: 1 1 40%; /* Flex grow, flex shrink, flex basis */
+    }
+  
+    .map iframe {
+      width: 100%;
+      height: 200px; /* Ajuste a altura do iframe do mapa */
+    }
+  }
+  
+
+  @media (min-width: 1600px) {
+    .agenda {
+      margin: 12rem 2rem;
+      display: grid;
+      grid-template-columns: repeat(3, 0.8fr);
+      grid-template-rows: auto;
+    }
+  
+    .agenda h1 {
+      font-size: 30px;
+    }
+  
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .evento {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    .numero {
+      font-size: 90px;
+    }
+  
+    .numero::before {
+      top: 10%;
+      left: 47%;
+      width: 50px;
+      height: 90px;
+    }
+  
+    .textos {
+      margin-left: 5vh;
+    }
+
+    .evento {
+      margin-right: auto;
+    }
+  
+    .detalhes {
+      padding-left: 30px; /* Ajuste o padding */
+    }
+  }
